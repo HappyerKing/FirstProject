@@ -1,0 +1,24 @@
+{
+  "name": "FirstProject",
+  "version": "1.0.0",
+  "description": "前端架构研究",
+  "main": "index.js",
+  "repository": "https://github.com/HappyerKing/FirstProject.git",
+  "author": "Jason.zhang <zhangguodongcs@126.com>",
+  "license": "MIT",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": ["prettier --write", "git add"],
+    "*.js": ["eslint --fix", "git add"]
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.4"
+  },
+  "dependencies": {
+    "eslint": "^4.19.1",
+    "prettier": "^1.12.1"
+  }
+}
